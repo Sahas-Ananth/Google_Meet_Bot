@@ -22,64 +22,53 @@ driver.get("https://meet.google.com/fow-ypbp-hvi")
 delay(3)
 
 camera_button = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div[1]/div[1]/div[3]/div[2]/div/div')
-camera_button.click()
+    '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div[1]/div[1]/div[3]/div[2]/div/div').click()
 
 mic_button = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div[1]/div[1]/div[3]/div[1]/div/div/div')
-mic_button.click()
+    '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div[1]/div[1]/div[3]/div[1]/div/div/div').click()
 
 preferences_button = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div[1]/div[1]/div[4]/div')
-preferences_button.click()
+    '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div[1]/div[1]/div[4]/div').click()
 
 delay(3)
 
 settings_button = driver.find_element_by_xpath(
-    '/html/body/div[3]/div/div/span[2]')
-settings_button.click()
+    '/html/body/div[3]/div/div/span[2]').click()
 
 delay(1)
 
 video_tab = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[1]/div[2]')
-video_tab.click()
+    '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[1]/div[2]').click()
 
 delay(1)
 
 video_send_quality_button = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[2]/span[2]/div[2]/div[1]/div[2]/div/div[1]')
-video_send_quality_button.click()
+    '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[2]/span[2]/div[2]/div[1]/div[2]/div/div[1]').click()
 
 delay(1)
 
 video_send_quality_720p_button = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[2]/span[2]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div[1]')
-video_send_quality_720p_button.click()
+    '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[2]/span[2]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div[1]').click()
 
 delay(1)
 
 video_recieve_quality_button = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[2]/span[2]/div[2]/div[2]/div[2]/div/div[1]')
-video_recieve_quality_button.click()
+    '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[2]/span[2]/div[2]/div[2]/div[2]/div/div[1]').click()
 
 delay(1)
 
 video_recieve_quality_720p_button = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[2]/span[2]/div[2]/div[2]/div[2]/div/div[1]/div[2]/div[1]')
-video_recieve_quality_720p_button.click()
+    '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[2]/span[2]/div[2]/div[2]/div[2]/div/div[1]/div[2]/div[1]').click()
 
 delay(1)
 
 settings_done_button = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/div[3]/div/div[2]/div[2]/div')
-settings_done_button.click()
+    '//*[@id="yDmH0d"]/div[3]/div/div[2]/div[2]/div').click()
 
 delay(1)
 
 enter_meeting_button = driver.find_element_by_xpath(
-    '//*[@id="ow3"]/div/div/div[4]/div[3]/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]')
-enter_meeting_button.click()
+    '//*[@id="ow3"]/div/div/div[4]/div[3]/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]').click()
 
 delay(10)
 driver.quit()
