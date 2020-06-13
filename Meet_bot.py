@@ -17,22 +17,7 @@ op.add_argument(
 # --profile-directory=Profile x I have chosen 1 cause it has my college mail id DO NOT USE Default it won't work
 
 driver = webdriver.Chrome(options=op)
-driver.get("https://meet.google.com/")
-
-delay(2)
-
-join_meet_button = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/c-wiz/div/div/div/div[2]/div[2]/div[2]/div/c-wiz/div[1]/div/div/div[1]')
-join_meet_button.click()
-
-delay(1)
-
-meeting_id = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div[2]/div[1]/div[1]/input')
-meeting_id.send_keys("fow-ypbp-hvi")
-meeting_continue_button = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div[4]/div[2]/div')
-meeting_continue_button.click()
+driver.get("https://meet.google.com/fow-ypbp-hvi")
 
 delay(3)
 
@@ -96,9 +81,10 @@ enter_meeting_button = driver.find_element_by_xpath(
     '//*[@id="ow3"]/div/div/div[4]/div[3]/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]')
 enter_meeting_button.click()
 
-delay(15)
+delay(10)
+driver.quit()
 
-# This should run one time:
+#  This should run one time:
 # Email = ''
 # pw = ''
 # account_switcher = driver.find_element_by_xpath(
