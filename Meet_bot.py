@@ -9,8 +9,12 @@ op.add_argument("use-fake-ui-for-media-stream")
 op.add_argument(
     '--user-data-dir=C:/User/anant/AppData/Local/Google/Chrome/User Data/Profile 1')
 
+# C:/User/Your_system_name/AppData/Local/Google/Chrome/User Data/Profile x I have chosen 1 cause it has my college mail id DO NOT USE Default it won't work
+
 op.add_argument(
     '--profile-directory=Profile 1')
+
+# --profile-directory=Profile x I have chosen 1 cause it has my college mail id DO NOT USE Default it won't work
 
 driver = webdriver.Chrome(options=op)
 driver.get("https://meet.google.com/")
@@ -95,12 +99,14 @@ enter_meeting_button.click()
 delay(15)
 
 # This should run one time:
+# Email = ''
+# pw = ''
 # account_switcher = driver.find_element_by_xpath(
 #     "/html/body/header/div[1]/div/div[3]/div[1]/div/span[1]/a")
 # account_switcher.click()
 
 # email_id = driver.find_element_by_xpath('//*[@id="identifierId"]')
-# email_id.send_keys("sahasrajit.a.2018.ece@rajalakshmi.edu.in")
+# email_id.send_keys(Email)
 # mail_next_button = driver.find_element_by_xpath('//*[@id="identifierNext"]')
 # mail_next_button.click()
 # delay(3)
