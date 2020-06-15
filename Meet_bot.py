@@ -19,59 +19,52 @@ op.add_argument(
 driver = webdriver.Chrome(options=op)
 driver.get("https://meet.google.com/fow-ypbp-hvi")
 
-delay(3)
+driver.implicitly_wait(10)
 
 camera_button = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div[1]/div[1]/div[3]/div[2]/div/div').click()
+    '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div/div[1]/div[1]/div[3]/div[2]/div/div').click()
+#    //*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div/div[1]/div[1]/div[3]/div[2]/div/div
 
 mic_button = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div[1]/div[1]/div[3]/div[1]/div/div/div').click()
+    '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div/div[1]/div[1]/div[3]/div[1]/div/div/div').click()
+#    //*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div/div[1]/div[1]/div[3]/div[1]/div/div/div
 
 preferences_button = driver.find_element_by_xpath(
-    '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div[1]/div[1]/div[4]/div').click()
+    '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div/div[1]/div[1]/div[4]/div').click()
+#    //*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div/div[1]/div[1]/div[4]/div
 
-delay(3)
+delay(0.5)
 
 settings_button = driver.find_element_by_xpath(
-    '/html/body/div[3]/div/div/span[2]').click()
+    '//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div[2]/div/div/span[2]').click()
 
-delay(1)
+delay(0.5)
 
 video_tab = driver.find_element_by_xpath(
     '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[1]/div[2]').click()
 
-delay(1)
-
 video_send_quality_button = driver.find_element_by_xpath(
     '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[2]/span[2]/div[2]/div[1]/div[2]/div/div[1]').click()
 
-delay(1)
 
 video_send_quality_720p_button = driver.find_element_by_xpath(
     '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[2]/span[2]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div[1]').click()
 
-delay(1)
 
 video_recieve_quality_button = driver.find_element_by_xpath(
     '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[2]/span[2]/div[2]/div[2]/div[2]/div/div[1]').click()
 
-delay(1)
-
 video_recieve_quality_720p_button = driver.find_element_by_xpath(
     '//*[@id="yDmH0d"]/div[3]/div/div[2]/span/div/div/div[2]/span[2]/div[2]/div[2]/div[2]/div/div[1]/div[2]/div[1]').click()
-
-delay(1)
 
 settings_done_button = driver.find_element_by_xpath(
     '//*[@id="yDmH0d"]/div[3]/div/div[2]/div[2]/div').click()
 
-delay(1)
-
 enter_meeting_button = driver.find_element_by_xpath(
-    '//*[@id="ow3"]/div/div/div[4]/div[3]/div/div[2]/div/div[2]/div/div[2]/div/div/div[1]').click()
+    '//*[@id="ow3"]/div/div/div[4]/div[3]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]').click()
 
 delay(10)
-driver.quit()
+# driver.quit()
 
 #  This should run one time:
 # Email = ''
